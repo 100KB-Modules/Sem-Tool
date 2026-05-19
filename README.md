@@ -1,88 +1,128 @@
-# 🎛️ SEM Tool Beta V.01
+# 🎛️ SEM Tool — Beta v0.1
 
-A Windows desktop utility for managing and recategorizing 
-.sem plugin modules.
+A lightweight Windows utility for organizing, browsing, and recategorizing `.sem` plugin modules.
+
+SEM Tool scans your plugin folders, builds a searchable category tree, and lets you quickly edit plugin categories.
 
 ---
 
-## 📥 Download & Install
+# 📥 Download
 
-**No installation required!**
-
-1. Go to the [Releases](../../releases) page
+1. Open the **Releases** section
 2. Download `SEMTool.exe`
-3. Run it directly — that's it!
+3. Run the executable
 
-> ⚠️ Windows may show a SmartScreen warning since the app is not 
-> code-signed. Click **"More Info" → "Run Anyway"** to proceed.
+No installation required.
 
----
-
-## ✨ Features
-
-- 📂 Browse and scan folders recursively for `.sem` plugin files
-- 🌲 View plugins organized by category in a tree view
-- 🔍 Real-time search and filter across modules and categories
-- ✏️ Reassign plugin categories with a single click
-- 💾 Directly patches `.sem` DLL files (no manual editing needed)
-- ✅ Multi-selection support for batch category updates
+> ⚠️ Because the application is not code-signed, Windows SmartScreen or antivirus software may display a warning the first time you run it.
+>
+> Click:
+>
+> **More Info → Run Anyway**
 
 ---
 
-## 🖥️ System Requirements
+# ✨ Features
 
-- **OS:** Windows 10 / 11 (64-bit)
-- **Runtime:** 
-  - [Visual C++ Redistributable 2019/2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-  *(Install this if the app doesn't open)*
-- **No additional software needed**
-
----
-
-## 🚀 How To Use
-
-1. **Open the app** — double-click `SEMTool.exe`
-2. **Select your folder** — click "Select Folder" or 
-   paste the path and press Enter
-3. **Browse your plugins** — they appear organized 
-   by category in the tree on the left
-4. **Search** — use the search bar to quickly 
-   find any module or category
-5. **Change a category:**
-   - Click on a plugin module in the tree
-   - Type the new category in the box on the right
-     *(use `/` for nested categories, e.g. `Synths/Leads`)*
-   - Click **"Apply Category"**
-6. Done! The plugin file is updated instantly
-
----
-
-## ⚠️ Important Warnings
-
-> **🔴 ALWAYS BACK UP YOUR `.sem` FILES BEFORE USING THIS TOOL**
-
-- This tool **directly modifies plugin DLL files**
-- Make sure your DAW / host is **closed** before applying 
-  any category changes
-- The developer is **not responsible** for any corrupted 
-  or lost plugin files
+* 📂 Recursive scanning of `.sem` plugin folders
+* 🌲 Tree-based category browser
+* 🔍 Instant search/filter for plugins and categories
+* ✏️ Single or multi-plugin category editing
+* 💾 Automatic `.original` backup creation before modification
+* ♻️ One-click restore to original plugin state
 
 
 ---
 
-## 📄 License
+# 🚀 How To Use
 
-Free to use for personal use.
+### 1. Launch the App
+
+Run:
+
+```text
+SEMTool.exe
+```
+
+### 2. Select Your SEM Folder
+
+* Click **Select Folder**
+  OR
+* Paste the folder path and press **Enter**
+
+### 3. Browse Plugins
+
+Plugins are automatically grouped into categories inside the tree view.
+
+### 4. Search
+
+Use the search bar to instantly filter modules or categories.
+
+### 5. Change Categories
+
+* Select one or more plugins
+* Enter a new category
+* Press **Apply Category**
+
+
+### 6. Done
+
+The plugin DLL is updated immediately.
 
 ---
 
-## 👤 Author
+# ♻️ Restore Original
 
-Made with ❤️ for the music production community.
+Before the first modification, SEM Tool automatically creates:
+
+```text
+plugin.sem.original
+```
+
+To restore:
+
+* Select the modified plugin
+* Press **Restore Original**
+
+The original plugin file will be restored automatically.
 
 ---
 
-## 💬 Feedback & Bug Reports
+# ⚠️ Important Warnings
 
-Found a bug or have a suggestion?  
-Open an [Issue](../../issues) on this page and describe the problem.
+> 🔴 ALWAYS BACK UP YOUR ENTIRE MODULES FOLDER BEFORE USING THIS TOOL
+
+* This application directly modifies plugin DLL resources
+* Make sure your DAW/host is completely closed before editing plugins
+* Editing plugins while loaded may fail or corrupt files
+* Use at your own risk
+
+---
+
+# 🧪 Status
+
+Current version:
+
+```text
+Beta v0.1
+```
+
+Bug reports and feedback are highly appreciated.
+
+---
+
+# 💬 Feedback / Bug Reports
+
+If you find bugs or have suggestions, open an Issue on GitHub.
+
+---
+
+# 📄 License
+
+Free for personal use.
+
+---
+
+# 👤 Author
+
+Made for the music production community 🎛️
