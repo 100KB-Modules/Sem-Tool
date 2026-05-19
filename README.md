@@ -1,5 +1,11 @@
 # 🎛️ SEM Tool — Beta v0.1
 
+## Screenshot
+
+<p align="center">
+  <img src="Capture.JPG" width="900">
+</p>
+
 A lightweight Windows utility for organizing, browsing, and recategorizing `.sem` plugin modules.
 
 SEM Tool scans your plugin folders, builds a searchable category tree, and lets you quickly edit plugin categories.
